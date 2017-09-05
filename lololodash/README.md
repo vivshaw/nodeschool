@@ -29,3 +29,6 @@ average = _.meanBy(foos, 'height');
 
 Ahhh, stuff I missed from Python/Pandas: easy grouping. With lodash, I can have that in JS!
 
+# Conclusions
+
+I'll probably be taking lodash for a spin in my next few projects & seeing how it feels! It may not be as 100% super essential as it was before ES6, but it's still got plenty of tasty bits to spice up my JS.
