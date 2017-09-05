@@ -14,10 +14,10 @@ I'm gradually working on moving my exercises into one consolidated repo, refacto
 #### Electives
 - [x] ExpressWorks
 - [x] learnyoumongo
+- [x] lololodash
 
 ## To tackle next:
 - [ ] Elementary Electron
 - [ ] Going Native
 - [ ] Kick off Koa
-- [ ] lololodash
 - [ ] Web Audio School
