@@ -7,6 +7,7 @@ My work towards the NodeSchool curriculum. :mortar_board:
 
 - [x] learnyounode
 - [x] git-it
+- [x] How To Npm
 
 #### Electives
 - [x] ExpressWorks
