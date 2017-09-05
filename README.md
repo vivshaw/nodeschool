@@ -1,6 +1,8 @@
 # nodeschool
 My work towards the NodeSchool curriculum. :mortar_board:
 
+I'm gradually working on moving my exercises into one consolidated repo, refactoring them, & taking notes on what I learned in each.
+
 ## Completed:
 
 #### Core
