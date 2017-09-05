@@ -5,16 +5,16 @@ My work towards the NodeSchool curriculum.
 
 #### Core
 
-[ ] - learnyounode
-[ ] - git-it
+- [ ] learnyounode
+- [ ] git-it
 
 #### Electives
-[ ] - ExpressWorks
-[ ] - learnyoumongo
+- [ ] ExpressWorks
+- [ ] learnyoumongo
 
 ## To tackle next:
-[ ] - Elementary Electron
-[ ] - Going Native
-[ ] - Kick off Koa
-[ ] - lololodash
-[ ] - Web Audio School
+- [ ] Elementary Electron
+- [ ] Going Native
+- [ ] Kick off Koa
+- [ ] lololodash
+- [ ] Web Audio School
