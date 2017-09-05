@@ -14,7 +14,7 @@ Things like `_.meanBy` save a ton of boilerplate!
 
 This little gem does the work of both `filter` and  `reject` by splitting a collection into an array of values that satisfy a predicate, and an array of those that fail it. Combined with array destructuring & lodash's math helpers, this makes chopping up data an absolute breeze. Splitting a dataset around the mean of a particular property is now a 2-liner (and also clearer, IMO):
 
-```
+```js
 foos = [
   { name: 'foo_1', height: '4'},
   { name: 'foo_2', height: '2'},
