@@ -1,5 +1,5 @@
 # nodeschool
-My work towards the NodeSchool curriculum.
+My work towards the NodeSchool curriculum. :mortar_board:
 
 ## Completed:
 
