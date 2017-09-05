@@ -5,12 +5,12 @@ My work towards the NodeSchool curriculum.
 
 #### Core
 
-- [ ] learnyounode
-- [ ] git-it
+- [x] learnyounode
+- [x] git-it
 
 #### Electives
-- [ ] ExpressWorks
-- [ ] learnyoumongo
+- [x] ExpressWorks
+- [x] learnyoumongo
 
 ## To tackle next:
 - [ ] Elementary Electron
