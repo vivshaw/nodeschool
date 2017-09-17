@@ -3,6 +3,8 @@ My work towards the NodeSchool curriculum. :mortar_board:
 
 I'm gradually working on moving my exercises into one consolidated repo, refactoring them, & taking notes on what I learned in each.
 
+Sparkles next to the ones I was super into, question marks (:question:) next to the ones I didn't fully grok. 
+
 ## Completed:
 
 #### Core
@@ -12,9 +14,10 @@ I'm gradually working on moving my exercises into one consolidated repo, refacto
 - [x] How To Npm
 
 #### Electives
-- [x] ExpressWorks
+- [x] ExpressWorks :sparkles:
 - [x] learnyoumongo
-- [x] lololodash
+- [x] lololodash :sparkles:
+- [x] learnyoucouchdb :sparkles:
 
 ## To tackle next:
 - [ ] Elementary Electron
