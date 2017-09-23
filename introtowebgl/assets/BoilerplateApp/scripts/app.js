@@ -46,16 +46,8 @@ var demo = (function(){
 
         function render() {
                 renderer.render(scene, camera); 
-                
-                camera.position.z -= 1 * swapCamera;
 
-                if (camera.position.z < 25 || camera.position.z > 100) {
-                    swapCamera = -swapCamera;
-                }
-
-                box.rotation.x += .1;
-                box.rotation.y += .01;
-                box.rotation.z += .05;
+                box.rotation.x += .01;
 
                 if (box.scale.x > 1.5 || box.scale.x < 0.5) {
                     swapBox = -swapBox;
