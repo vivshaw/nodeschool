@@ -12,15 +12,15 @@ Sparkles next to the ones I was super into, question marks (:question:) next to 
 - [x] learnyounode
 - [x] git-it
 - [x] How To Npm
+- [x] Elementary Electron :sparkles:
 
 #### Electives
-- [x] ExpressWorks :sparkles:
+- [x] ExpressWorks
 - [x] learnyoumongo
 - [x] lololodash :sparkles:
 - [x] learnyoucouchdb :sparkles:
 
 ## To tackle next:
-- [ ] Elementary Electron
 - [ ] Going Native
 - [ ] Kick off Koa
 - [ ] Web Audio School
