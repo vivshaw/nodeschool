@@ -11,7 +11,8 @@ var demo = (function(){
         ground,
         controls=null,
         swapCamera=1,
-        swapBox=1;
+        swapBox=1,
+        childBox;
 
         function initScene(){
     
@@ -38,7 +39,15 @@ var demo = (function(){
                 20),
               new THREE.MeshBasicMaterial({color: 0xFF0000}));
 
+            childBox = new THREE.Mesh(
+                new THREE.CubeGeometry(10, 10, 10),
+                new THREE.MeshBasicMaterial({color: 0x0000FF}));
+
+                childBox.name = 'friend';
+
             scene.add(box);
+            box.add(childBox);
+            box.getObjectByName('friend').position.x += 20;
 
             requestAnimationFrame(render);
 
@@ -49,13 +58,11 @@ var demo = (function(){
 
                 box.rotation.x += .01;
 
-                if (box.scale.x > 1.5 || box.scale.x < 0.5) {
+                if (box.position.x > 50 || box.position.x < -50) {
                     swapBox = -swapBox;
                 }
 
-                box.scale.x += .03 * swapBox;
-                box.scale.y += .03 * swapBox;
-                box.scale.z += .03 * swapBox;
+                box.position.x += .1 * swapBox;
                 
                 requestAnimationFrame(render);
         };
