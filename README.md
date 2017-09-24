@@ -20,6 +20,9 @@ Sparkles next to the ones I was super into, question marks (:question:) next to 
 - [x] lololodash :sparkles:
 - [x] learnyoucouchdb :sparkles:
 
+## In progress
+- [ ] introtowbgl :question:
+
 ## To tackle next:
 - [ ] Going Native
 - [ ] Kick off Koa
