@@ -12,7 +12,8 @@ var demo = (function(){
         controls=null,
         swapCamera=1,
         swapBox=1,
-        childBox;
+        childBox,
+        mesh;
 
         function initScene(){
     
@@ -51,6 +52,19 @@ var demo = (function(){
 
             requestAnimationFrame(render);
 
+            var loader = new THREE.JSONLoader();
+    
+            loader.load('gooseFull.js', function (geometry) {
+                  var gooseMaterial = new THREE.MeshLambertMaterial({
+                   map: THREE.ImageUtils.loadTexture('goose.jpg')
+               });
+    
+               mesh = new THREE.Mesh(geometry, gooseMaterial);
+               mesh.scale.set(10, 10, 10);
+    
+               scene.add(mesh);
+        });
+
         };
 
         function render() {
@@ -63,6 +77,8 @@ var demo = (function(){
                 }
 
                 box.position.x += .1 * swapBox;
+
+                mesh.rotation.y += .01
                 
                 requestAnimationFrame(render);
         };
