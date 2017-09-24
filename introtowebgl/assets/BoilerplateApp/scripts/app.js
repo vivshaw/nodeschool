@@ -50,21 +50,26 @@ var demo = (function(){
             box.add(childBox);
             box.getObjectByName('friend').position.x += 20;
 
+            document.addEventListener('mousedown', onDocumentMouseDown, false);
+
+            function onDocumentMouseDown(event) {
+                event.preventDefault();
+                var projector = new THREE.Projector();
+                var vector = new THREE.Vector3((event.clientX / window.innerWidth) * 2 - 1, -(event.clientY / window.innerHeight) * 2 + 1, 0.5);
+                
+                projector.unprojectVector(vector, camera);
+
+                var raycaster = new THREE.Raycaster(camera.position, vector.sub(camera.position).normalize());
+                var intersects = raycaster.intersectObjects(objects);
+                
+                if (intersects.length > 0) {
+                    alert('intersects!')
+                }
+            }
+
+            
+
             requestAnimationFrame(render);
-
-            var loader = new THREE.JSONLoader();
-    
-            loader.load('gooseFull.js', function (geometry) {
-                  var gooseMaterial = new THREE.MeshLambertMaterial({
-                   map: THREE.ImageUtils.loadTexture('goose.jpg')
-               });
-    
-               mesh = new THREE.Mesh(geometry, gooseMaterial);
-               mesh.scale.set(10, 10, 10);
-    
-               scene.add(mesh);
-        });
-
         };
 
         function render() {
@@ -77,8 +82,6 @@ var demo = (function(){
                 }
 
                 box.position.x += .1 * swapBox;
-
-                mesh.rotation.y += .01
                 
                 requestAnimationFrame(render);
         };
