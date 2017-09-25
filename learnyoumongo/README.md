@@ -1,0 +1,3 @@
+# learnyoumongo
+
+This is not half bad. I've tried Mongo in a couple projects & found it easier to work with than other NoSQL databases I've tried, especially with Mongoose to give it a friendlier wrapper. I wish it had CouchDB's sync functionality, though...
